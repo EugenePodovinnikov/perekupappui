@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82B9082828DECC4B0006443B /* perekuappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9082728DECC4B0006443B /* perekuappApp.swift */; };
+		82B9082A28DECC4B0006443B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9082928DECC4B0006443B /* ContentView.swift */; };
+		82B9082C28DECC4C0006443B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9082B28DECC4C0006443B /* Assets.xcassets */; };
+		82B9082F28DECC4C0006443B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9082E28DECC4C0006443B /* Preview Assets.xcassets */; };
+		82B9083128DECC4C0006443B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9083028DECC4C0006443B /* Persistence.swift */; };
+		82B9083428DECC4C0006443B /* perekuapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82B9083228DECC4C0006443B /* perekuapp.xcdatamodeld */; };
+		82B9083E28DECC4C0006443B /* perekuappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9083D28DECC4C0006443B /* perekuappTests.swift */; };
+		82B9084828DECC4C0006443B /* perekuappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9084728DECC4C0006443B /* perekuappUITests.swift */; };
+		82B9084A28DECC4C0006443B /* perekuappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9084928DECC4C0006443B /* perekuappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82B9083A28DECC4C0006443B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B9081C28DECC4A0006443B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B9082328DECC4B0006443B;
+			remoteInfo = perekuapp;
+		};
+		82B9084428DECC4C0006443B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82B9081C28DECC4A0006443B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B9082328DECC4B0006443B;
+			remoteInfo = perekuapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82B9082428DECC4B0006443B /* perekuapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perekuapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B9082728DECC4B0006443B /* perekuappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappApp.swift; sourceTree = "<group>"; };
+		82B9082928DECC4B0006443B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		82B9082B28DECC4C0006443B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82B9082E28DECC4C0006443B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82B9083028DECC4C0006443B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		82B9083328DECC4C0006443B /* perekuapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = perekuapp.xcdatamodel; sourceTree = "<group>"; };
+		82B9083928DECC4C0006443B /* perekuappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perekuappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B9083D28DECC4C0006443B /* perekuappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappTests.swift; sourceTree = "<group>"; };
+		82B9084328DECC4C0006443B /* perekuappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perekuappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B9084728DECC4C0006443B /* perekuappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappUITests.swift; sourceTree = "<group>"; };
+		82B9084928DECC4C0006443B /* perekuappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82B9082128DECC4B0006443B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B9083628DECC4C0006443B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B9084028DECC4C0006443B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82B9081B28DECC4A0006443B = {
+			isa = PBXGroup;
+			children = (
+				82B9082628DECC4B0006443B /* perekuapp */,
+				82B9083C28DECC4C0006443B /* perekuappTests */,
+				82B9084628DECC4C0006443B /* perekuappUITests */,
+				82B9082528DECC4B0006443B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82B9082528DECC4B0006443B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82B9082428DECC4B0006443B /* perekuapp.app */,
+				82B9083928DECC4C0006443B /* perekuappTests.xctest */,
+				82B9084328DECC4C0006443B /* perekuappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82B9082628DECC4B0006443B /* perekuapp */ = {
+			isa = PBXGroup;
+			children = (
+				82B9082728DECC4B0006443B /* perekuappApp.swift */,
+				82B9082928DECC4B0006443B /* ContentView.swift */,
+				82B9082B28DECC4C0006443B /* Assets.xcassets */,
+				82B9083028DECC4C0006443B /* Persistence.swift */,
+				82B9083228DECC4C0006443B /* perekuapp.xcdatamodeld */,
+				82B9082D28DECC4C0006443B /* Preview Content */,
+			);
+			path = perekuapp;
+			sourceTree = "<group>";
+		};
+		82B9082D28DECC4C0006443B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82B9082E28DECC4C0006443B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82B9083C28DECC4C0006443B /* perekuappTests */ = {
+			isa = PBXGroup;
+			children = (
+				82B9083D28DECC4C0006443B /* perekuappTests.swift */,
+			);
+			path = perekuappTests;
+			sourceTree = "<group>";
+		};
+		82B9084628DECC4C0006443B /* perekuappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82B9084728DECC4C0006443B /* perekuappUITests.swift */,
+				82B9084928DECC4C0006443B /* perekuappUITestsLaunchTests.swift */,
+			);
+			path = perekuappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82B9082328DECC4B0006443B /* perekuapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B9084D28DECC4C0006443B /* Build configuration list for PBXNativeTarget "perekuapp" */;
+			buildPhases = (
+				82B9082028DECC4B0006443B /* Sources */,
+				82B9082128DECC4B0006443B /* Frameworks */,
+				82B9082228DECC4B0006443B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = perekuapp;
+			productName = perekuapp;
+			productReference = 82B9082428DECC4B0006443B /* perekuapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82B9083828DECC4C0006443B /* perekuappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B9085028DECC4C0006443B /* Build configuration list for PBXNativeTarget "perekuappTests" */;
+			buildPhases = (
+				82B9083528DECC4C0006443B /* Sources */,
+				82B9083628DECC4C0006443B /* Frameworks */,
+				82B9083728DECC4C0006443B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82B9083B28DECC4C0006443B /* PBXTargetDependency */,
+			);
+			name = perekuappTests;
+			productName = perekuappTests;
+			productReference = 82B9083928DECC4C0006443B /* perekuappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82B9084228DECC4C0006443B /* perekuappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82B9085328DECC4C0006443B /* Build configuration list for PBXNativeTarget "perekuappUITests" */;
+			buildPhases = (
+				82B9083F28DECC4C0006443B /* Sources */,
+				82B9084028DECC4C0006443B /* Frameworks */,
+				82B9084128DECC4C0006443B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82B9084528DECC4C0006443B /* PBXTargetDependency */,
+			);
+			name = perekuappUITests;
+			productName = perekuappUITests;
+			productReference = 82B9084328DECC4C0006443B /* perekuappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82B9081C28DECC4A0006443B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					82B9082328DECC4B0006443B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					82B9083828DECC4C0006443B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 82B9082328DECC4B0006443B;
+					};
+					82B9084228DECC4C0006443B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 82B9082328DECC4B0006443B;
+					};
+				};
+			};
+			buildConfigurationList = 82B9081F28DECC4A0006443B /* Build configuration list for PBXProject "perekuapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82B9081B28DECC4A0006443B;
+			productRefGroup = 82B9082528DECC4B0006443B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82B9082328DECC4B0006443B /* perekuapp */,
+				82B9083828DECC4C0006443B /* perekuappTests */,
+				82B9084228DECC4C0006443B /* perekuappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82B9082228DECC4B0006443B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B9082F28DECC4C0006443B /* Preview Assets.xcassets in Resources */,
+				82B9082C28DECC4C0006443B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B9083728DECC4C0006443B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B9084128DECC4C0006443B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82B9082028DECC4B0006443B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B9083128DECC4C0006443B /* Persistence.swift in Sources */,
+				82B9082A28DECC4B0006443B /* ContentView.swift in Sources */,
+				82B9082828DECC4B0006443B /* perekuappApp.swift in Sources */,
+				82B9083428DECC4C0006443B /* perekuapp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B9083528DECC4C0006443B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B9083E28DECC4C0006443B /* perekuappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82B9083F28DECC4C0006443B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82B9084A28DECC4C0006443B /* perekuappUITestsLaunchTests.swift in Sources */,
+				82B9084828DECC4C0006443B /* perekuappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82B9083B28DECC4C0006443B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82B9082328DECC4B0006443B /* perekuapp */;
+			targetProxy = 82B9083A28DECC4C0006443B /* PBXContainerItemProxy */;
+		};
+		82B9084528DECC4C0006443B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82B9082328DECC4B0006443B /* perekuapp */;
+			targetProxy = 82B9084428DECC4C0006443B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		82B9084B28DECC4C0006443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82B9084C28DECC4C0006443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82B9084E28DECC4C0006443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"perekuapp/Preview Content\"";
+				DEVELOPMENT_TEAM = VPACGJ2M9C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ipodovinnikov.perekuapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82B9084F28DECC4C0006443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"perekuapp/Preview Content\"";
+				DEVELOPMENT_TEAM = VPACGJ2M9C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ipodovinnikov.perekuapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		82B9085128DECC4C0006443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPACGJ2M9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ipodovinnikov.perekuappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/perekuapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/perekuapp";
+			};
+			name = Debug;
+		};
+		82B9085228DECC4C0006443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPACGJ2M9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ipodovinnikov.perekuappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/perekuapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/perekuapp";
+			};
+			name = Release;
+		};
+		82B9085428DECC4C0006443B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPACGJ2M9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ipodovinnikov.perekuappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = perekuapp;
+			};
+			name = Debug;
+		};
+		82B9085528DECC4C0006443B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VPACGJ2M9C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ipodovinnikov.perekuappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = perekuapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82B9081F28DECC4A0006443B /* Build configuration list for PBXProject "perekuapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B9084B28DECC4C0006443B /* Debug */,
+				82B9084C28DECC4C0006443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B9084D28DECC4C0006443B /* Build configuration list for PBXNativeTarget "perekuapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B9084E28DECC4C0006443B /* Debug */,
+				82B9084F28DECC4C0006443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B9085028DECC4C0006443B /* Build configuration list for PBXNativeTarget "perekuappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B9085128DECC4C0006443B /* Debug */,
+				82B9085228DECC4C0006443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82B9085328DECC4C0006443B /* Build configuration list for PBXNativeTarget "perekuappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82B9085428DECC4C0006443B /* Debug */,
+				82B9085528DECC4C0006443B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82B9083228DECC4C0006443B /* perekuapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82B9083328DECC4C0006443B /* perekuapp.xcdatamodel */,
+			);
+			currentVersion = 82B9083328DECC4C0006443B /* perekuapp.xcdatamodel */;
+			path = perekuapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82B9081C28DECC4A0006443B /* Project object */;
+}
