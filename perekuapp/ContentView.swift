@@ -18,32 +18,31 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+            ZStack {
+                Image("porsche911").resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Text(" Welcome ").foregroundColor(Color.white).bold().font(.system(size: 90)).background(Color.purple).cornerRadius(30)
+                    NavigationLink(destination: MainPageView()) {
+                        NavigationLink(destination: MainPageView()) {
+                            prettyBackgound(text: "Start", size: 50)
+                        }.navigationTitle("")
                     }
                 }
             }
-            Text("Select an item")
         }
+    }
+    
+    
+    func prettyBackgound(text: String, size: Int) -> some View {
+        Text(text).foregroundColor(Color.white).padding(20).cornerRadius(30).font(.system(size: CGFloat(size))).background(Color.purple)
     }
 
     private func addItem() {
         withAnimation {
+            
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		821068EF28F9A94D00D5873B /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821068EE28F9A94D00D5873B /* SearchResultsView.swift */; };
 		82B9082828DECC4B0006443B /* perekuappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9082728DECC4B0006443B /* perekuappApp.swift */; };
 		82B9082A28DECC4B0006443B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9082928DECC4B0006443B /* ContentView.swift */; };
 		82B9082C28DECC4C0006443B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B9082B28DECC4C0006443B /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		82B9083E28DECC4C0006443B /* perekuappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9083D28DECC4C0006443B /* perekuappTests.swift */; };
 		82B9084828DECC4C0006443B /* perekuappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9084728DECC4C0006443B /* perekuappUITests.swift */; };
 		82B9084A28DECC4C0006443B /* perekuappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9084928DECC4C0006443B /* perekuappUITestsLaunchTests.swift */; };
+		82B9085928DEDDAC0006443B /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9085828DEDDAC0006443B /* MainPageView.swift */; };
+		82B9085B28E004200006443B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9085A28E004200006443B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		821068EE28F9A94D00D5873B /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		82B9082428DECC4B0006443B /* perekuapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perekuapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B9082728DECC4B0006443B /* perekuappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappApp.swift; sourceTree = "<group>"; };
 		82B9082928DECC4B0006443B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		82B9084328DECC4C0006443B /* perekuappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = perekuappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B9084728DECC4C0006443B /* perekuappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappUITests.swift; sourceTree = "<group>"; };
 		82B9084928DECC4C0006443B /* perekuappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perekuappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82B9085828DEDDAC0006443B /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		82B9085A28E004200006443B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				82B9083028DECC4C0006443B /* Persistence.swift */,
 				82B9083228DECC4C0006443B /* perekuapp.xcdatamodeld */,
 				82B9082D28DECC4C0006443B /* Preview Content */,
+				82B9085828DEDDAC0006443B /* MainPageView.swift */,
+				821068EE28F9A94D00D5873B /* SearchResultsView.swift */,
+				82B9085A28E004200006443B /* Constants.swift */,
 			);
 			path = perekuapp;
 			sourceTree = "<group>";
@@ -265,8 +274,11 @@
 			files = (
 				82B9083128DECC4C0006443B /* Persistence.swift in Sources */,
 				82B9082A28DECC4B0006443B /* ContentView.swift in Sources */,
+				821068EF28F9A94D00D5873B /* SearchResultsView.swift in Sources */,
+				82B9085928DEDDAC0006443B /* MainPageView.swift in Sources */,
 				82B9082828DECC4B0006443B /* perekuappApp.swift in Sources */,
 				82B9083428DECC4C0006443B /* perekuapp.xcdatamodeld in Sources */,
+				82B9085B28E004200006443B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
