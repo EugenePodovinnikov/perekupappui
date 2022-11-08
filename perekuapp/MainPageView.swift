@@ -17,8 +17,9 @@ struct MainPageView: View {
     @State var selectedYearTill = 2022
     @State var prices = [1000, 2000, 3000, 5000, 6000, 7000, 8000, 9000, 10000, 15000, 20000, 25000, 30000]
     @State var price = 5000
-    @State var makeInt = 0
     @State var searchUrl : String = "default"
+    @State var endpoint = "default"
+    @State var searchResults = [SingleResult]()
     
     var body: some View {
         ZStack {
@@ -36,14 +37,12 @@ struct MainPageView: View {
                 switch brand {
                 case "Audi":
                     Picker("Select a model", selection: $model) {
-                        let _ = makeInt = 0
                         ForEach(audiModels, id: \.self) {
                             Text($0).padding(100)
                         }
                     }.pickerStyle(.menu).padding(5).background(Color.white)
                 case "BMW":
                     Picker("Select a model", selection: $model) {
-                        let _ = makeInt = 9
                         ForEach(bmwModels, id: \.self) {
                             Text($0).padding(100)
                         }
@@ -51,7 +50,6 @@ struct MainPageView: View {
                     }.pickerStyle(.menu).padding(5).background(Color.white)
                 case "Toyota":
                     Picker("Select a model", selection: $model) {
-                        let _ = makeInt = 79
                         ForEach(toyotaModels, id: \.self) {
                             Text($0).padding(100)
                         }
@@ -59,7 +57,6 @@ struct MainPageView: View {
                     }.pickerStyle(.menu).padding(5).background(Color.white)
                 case "Volkswagen":
                     Picker("Select a model", selection: $model) {
-                        let _ = makeInt = 84
                         ForEach(volkswagenModels, id: \.self) {
                             Text($0).padding(100)
                         }
@@ -67,7 +64,6 @@ struct MainPageView: View {
                     }.pickerStyle(.menu).padding(5).background(Color.white)
                 case "Alfa Romeo":
                     Picker("Select a model", selection: $model) {
-                        let _ = makeInt = 2
                         ForEach(alfaModels, id: \.self) {
                             Text($0).padding(100)
                         }
@@ -116,52 +112,66 @@ struct MainPageView: View {
         }
     }
     
-    func makeBrandIdFromBrand() {
-        switch brand {
-        case "Alfa Romeo" :
-            brand = brandIds["Alfa Romeo"]!
-        case "BMW" :
-            brand = brandIds["BMW"]!
-        case "Toyota" :
-            brand = brandIds["Toyota"]!
-        default:
-            brand = "default"
-        }
-    }
-    
     func prepareSearchRequest() {
-        makeBrandIdFromBrand()
         if (brand == "default") {
-            searchUrl = "s_yers[0]=\(selectedYearFrom)&po_yers[0]=\(selectedYearTill)&price_ot=0&price_do=\(maxPrice)"
-        } else
+            endpoint = getByPriceAndYear
+            searchUrl = "yearFrom=\(selectedYearFrom)&yearTill=\(selectedYearTill)&maxPrice=\(maxPrice)"
+        }
         
         if (model == "default") {
-            searchUrl = "s_yers[0]=\(selectedYearFrom)&po_yers[0]=\(selectedYearTill)&price_ot=0&price_do=\(maxPrice)&marka_id[0]=\(brand)"
-        } else
-        
-        if (model != "default") {
-            searchUrl = "s_yers[0]=\(selectedYearFrom)&po_yers[0]=\(selectedYearTill)&price_ot=0&price_do=\(maxPrice)&marka_id[0]=\(brand)&model_id[0]=\(model)"
-        }
-        else {
-            searchUrl = "wrong request"
+            endpoint = getByPriceYearAndMake
+            searchUrl = "yearFrom=\(selectedYearFrom)&yearTill=\(selectedYearTill)&maxPrice=\(maxPrice)&make=\(brand)"
+        } else {
+            endpoint = getByPriceYearMakeAndModel
+            searchUrl = "yearFrom=\(selectedYearFrom)&yearTill=\(selectedYearTill)&maxPrice=\(maxPrice)&make=\(brand)&model=\(model)"
         }
     }
     
     func performSearchRequest() {
-        let example = "make=84&maxPrice=12000&yearFrom=2010&yearTill=2022&model=2692"
-        let url = URL(string: baseUrl + getByPriceYearAndMake + searchUrl)!
-        print("Peforming search request: " + url.absoluteString)
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let data = data else { return }
-            print(String(data: data, encoding: .utf8)!)
+        print(baseUrl + endpoint + searchUrl)
+        let urlString = baseUrl + endpoint + searchUrl
+        print("Peforming search request: " + urlString)
+//        let task = URLSession.shared.dataTask(with: urlString) {(data, response, error) in
+//            guard let data = try? Data(contentsOf: urlString)  else { return }
+//            parseResults(json: data)
+//            print(String(data: data, encoding: .utf8)!)
+//        }
+//        task.resume()
+        DispatchQueue.global().async {
+            if let url = URL(string: urlString) {
+                if let data = try? Data(contentsOf: url) {
+                    // we're OK to parse!
+                    parseResults(json: data)
+                }
+            }
         }
-        task.resume()
+    }
+    
+    func parseResults(json: Data) {
+        let decoder = JSONDecoder()
+
+        searchResults = try! decoder.decode([SingleResult].self, from: json) as! [MainPageView.SingleResult]
+        print(searchResults)
+        print("Search results count is \(searchResults.count)")
     }
     
     func prettyBackgound(text: String, size: Int) -> some View {
         Text(text).foregroundColor(Color.white).padding(20).cornerRadius(30).font(.system(size: CGFloat(size))).background(Color.purple).cornerRadius(5)
     }
+    
+    struct SingleResult: Codable {
+        var title: String
+        var linkToView: String
+        var locationCityName: String
+        var markName: String
+        var modelName: String
+        var USD: String
+    }
 
+    class AllResults: Codable {
+        var results: [SingleResult]
+    }
+    
     struct MainPageView_Previews: PreviewProvider {
         static var previews: some View {
             MainPageView()
