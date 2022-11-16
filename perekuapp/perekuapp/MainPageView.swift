@@ -148,6 +148,7 @@ struct MainPageView: View {
         print(searchResults)
         print("Search results count is \(searchResults.count)")
     }
+
     
     func prettyBackgound(text: String, size: Int) -> some View {
         Text(text).foregroundColor(Color.white).padding(20).cornerRadius(30).font(.system(size: CGFloat(size))).background(Color.purple).cornerRadius(5)
@@ -155,16 +156,28 @@ struct MainPageView: View {
     
     struct SingleResult: Codable, Identifiable {
         let id = UUID()
+        var autoData: AutoData
         var title: String
         var linkToView: String
         var locationCityName: String
         var markName: String
         var modelName: String
         var USD: String
+        var VIN: String
     }
 
     class AllResults: Codable {
         var results: [SingleResult]
+    }
+    
+    struct AutoData: Codable, Identifiable {
+        let id = UUID()
+        var autoId: String
+        var description: String
+        var year: String
+        var fuelName: String
+        var driveName: String
+        var race: String
     }
     
     struct MainPageView_Previews: PreviewProvider {

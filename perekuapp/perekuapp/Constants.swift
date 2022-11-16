@@ -7,7 +7,7 @@
 
 import Foundation
 
-let baseUrl = "http://localhost:8080/api/v1/used-autos"
+let baseUrl = "https://perekupapp.oa.r.appspot.com/api/v1/used-autos"
 let photosUrl = "/get-photos?id="
 let brands = ["Select a brand", "Alfa Romeo","Audi", "BMW", "Mercedes", "Volkswagen"]
 let defaultModelPicker = ["Select a brand first"]
